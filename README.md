@@ -25,8 +25,25 @@ Para facilitar o uso você pode opcionalmente criar o arquivo Config.json na pas
 ```
 Com essa configuração definida, não será necessário passar os paramêtros ProtheusBin ou RpoFileName para o aplicativo.
 
-## Funcionalidades:
+## SINTAXE:
 
+### List
+    CTools list [[-ProtheusBin] <String>] [-printEnv] [[-Environment] <String>]
+    
+    Parametros:
+    ProtheusBin = Caminho para a pasta <Protheus\Bin>
+    printEnv = Deseja listar os environments
+    Environment = Filtrar os Appservers em que encontrou o environment pesquisado
+
+### Update
+    CTools update [[-ProtheusBin] <String>] [-Environment] <String> [[-SourcePath] <String>] [[-RpoFileName] <String>] 
+
+    Parametros:
+    ProtheusBin = Caminho para a pasta <Protheus\Bin>
+    Environment = Environment a ser atualizado
+    SourcePath = Nova pasta a ser atualizada no SourcePath os Ini's (essa pasta deve existir)
+    RpoFileName = Nome do arquivo de RPO
+    
 Listagem de Appservers:
 CTools.exe list  
 
