@@ -43,9 +43,12 @@ Com essa configuração definida, não será necessário passar os paramêtros P
     Environment = Environment a ser atualizado
     SourcePath = Nova pasta a ser atualizada no SourcePath os Ini's (essa pasta deve existir)
     RpoFileName = Nome do arquivo de RPO
-    
-Listagem de Appservers:
+
+## EXEMPLOS DE USO:
+* Listagem de Appservers:
 CTools.exe list  
+
+
 
 A ferramenta irá procurar todos os appserver.exe instalados a partir da pasta definida em ProtheusBin, e apreesantando informações como Porta, Environment, Serviço, Estado do Serviço, etc.
 
