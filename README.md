@@ -2,7 +2,7 @@
 
 Comottec Tools é um aplicativo por linha de comando, que contém um conjuto de feraramentas para consultores e DevOps com o intuito de facilitar e automatizar tarefas diárias.
 
-## Funcionalidades principais:
+## Funcionalidades:
 
 * Listar portas e serviços em um conjunto de Appservers;
 * Listar configurações de environments em um conjunto de Appservers;
@@ -13,6 +13,12 @@ Comottec Tools é um aplicativo por linha de comando, que contém um conjuto de 
 * Criar configuração de master
 * Criar configuração de broker
 * Criar novos slots de Appsever para ativar no master;
+
+## Requisitos:
+
+* Sistema operacional Windows.
+* .Net Framework 4.00 ou superior.
+* Powershell 5.0 ou superior.
 
 ## Configurações:
 
@@ -25,7 +31,13 @@ Para facilitar o uso você pode opcionalmente criar o arquivo Config.json na pas
 ```
 Com essa configuração definida, não será necessário passar os paramêtros ProtheusBin ou RpoFileName para o aplicativo.
 
-## SINTAXE:
+## Instalação:
+
+Baixar o repostório do GitHub e extrair para a pasta C:\Comottec\CTools
+
+Recomenda-se colocar essa pasta no path do sistema opercional.
+
+## Sintaxe:
 
 ### List
     CTools list [[-ProtheusBin] <String>] [-printEnv] [[-Environment] <String>]
@@ -44,7 +56,7 @@ Com essa configuração definida, não será necessário passar os paramêtros P
     SourcePath = Nova pasta a ser atualizada no SourcePath os Ini's (essa pasta deve existir)
     RpoFileName = Nome do arquivo de RPO
 
-## EXEMPLOS DE USO:
+## Exemplos de uso:
 
 #### Listagem de Appservers:
     CTools.exe list  
