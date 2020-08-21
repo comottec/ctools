@@ -6,9 +6,9 @@ Comottec Tools é um aplicativo por linha de comando, que contém um conjuto de 
 * Listar portas e serviços em um conjunto de Appservers;
 * Listar configurações de environments em um conjunto de Appservers;
 * Atualizar o RPO (repositório de objetos) em vários Appservers com um único comando;
+* Parar/Iniciar o serviço de todos os Appservers;
 
 ### Em breve:
-* Parar/Iniciar o serviço de todos os Appservers;
 * Criar environments em todos os Appservers;
 * Criar configuração de master 
 * Criar configuração de broker
@@ -56,6 +56,15 @@ Recomenda-se colocar essa pasta no path do sistema opercional.
     SourcePath = Nova pasta a ser atualizada no SourcePath os Ini's (essa pasta deve existir)
     RpoFileName = Nome do arquivo de RPO
 
+### Start
+    CTools start
+
+### Stop
+    CTools stop [-Force]
+
+    Parametros:
+    Force = Forçar a parada do serviço
+
 ## Exemplos de uso:
 
 #### Listagem de Appservers:
@@ -74,3 +83,13 @@ Recomenda-se colocar essa pasta no path do sistema opercional.
     CTools.exe update -Environment top -SourcePath=C:\tovs12\protheus\apo\top\v002
 ![list-update](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-update.png)
 
+#### Para rodar os comandos Start ou Stop será necessário privilégios administrativos:
+![admin](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-privilegies.png)
+
+#### Start
+    CTools.exe start
+![start](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-start.png)
+
+#### Stop
+    CTools.exe stop
+![start](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-stop.png)
