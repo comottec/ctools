@@ -46,19 +46,19 @@ Com essa configuração definida, não será necessário passar os paramêtros P
 
 ## EXEMPLOS DE USO:
 
-### Listagem de Appservers:
+#### Listagem de Appservers:
+    CTools.exe list  
+![list](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list.png)
 
-#### CTools.exe list  
-    ![list](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list.png)
+#### Listagem de Environments:
+    CTools.exe list -printEnv
+![list-printenv](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list-printenv.png)
 
-#### CTools.exe list -printEnv
-    ![list-printenv](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list-printenv.png)
+#### Listagem de um Environment:
+    CTools.exe list -Environment top
+![list-environment](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list-environment.png)
 
-#### CTools.exe list -Environment top
-    ![list-environment](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list-environment.png)
-
-### Update de SourcePath nos Appservers:
-
-#### CTools.exe update -Environment top -SourcePath=C:\tovs12\protheus\apo\top\v002
-    ![list-update](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-update.png)
+#### Update de SourcePath nos Appservers:
+    CTools.exe update -Environment top -SourcePath=C:\tovs12\protheus\apo\top\v002
+![list-update](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-update.png)
 
