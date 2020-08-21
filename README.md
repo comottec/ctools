@@ -1,2 +1,4 @@
-# ctools
-CTools é uma ferramenta para auxiliar consultores e DevOps a trabalhar com ERP Protheus.
+# CTools
+Comottec Tools é um conjuto de feraramentas para consultores e DevOps com o intuito de facilitar e automatizar tarefas diárias.
+
+
