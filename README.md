@@ -46,13 +46,17 @@ Com essa configuração definida, não será necessário passar os paramêtros P
 
 ## EXEMPLOS DE USO:
 * Listagem de Appservers:
-CTools.exe list  
+    CTools.exe list  
+    ![list](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list.png)
 
+    CTools.exe list -printEnv
+    ![list](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list-printenv.png)
 
+    CTools.exe list -Environment top
+    ![list](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list-environment.png)
 
-A ferramenta irá procurar todos os appserver.exe instalados a partir da pasta definida em ProtheusBin, e apreesantando informações como Porta, Environment, Serviço, Estado do Serviço, etc.
-
-
-
+* Update de SourcePath nos Appservers:
+    CTools.exe update -Environment top -SourcePath=C:\tovs12\protheus\apo\top\v002
+    ![list](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-update.png)
 
 
