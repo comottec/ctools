@@ -3,14 +3,14 @@
 Comottec Tools é um aplicativo por linha de comando, que contém um conjuto de feraramentas para consultores e DevOps com o intuito de facilitar e automatizar tarefas diárias.
 
 ## Funcionalidades:
-
 * Listar portas e serviços em um conjunto de Appservers;
 * Listar configurações de environments em um conjunto de Appservers;
 * Atualizar o RPO (repositório de objetos) em vários Appservers com um único comando;
 
 ### Em breve:
+* Parar/Iniciar o serviço de todos os Appservers;
 * Criar environments em todos os Appservers;
-* Criar configuração de master
+* Criar configuração de master 
 * Criar configuração de broker
 * Criar novos slots de Appsever para ativar no master;
 
