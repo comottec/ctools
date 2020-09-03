@@ -31,7 +31,8 @@ https://raw.githubusercontent.com/comottec/ctools/master/distr/buildSetup/setup.
 
 Ou
 
-Baixar o repostório do GitHub: git clone https://github.com/comottec/ctools.git ctools
+### Baixar o repostório do GitHub: 
+    git clone https://github.com/comottec/ctools.git ctools
 
 Recomenda-se colocar essa pasta no path do sistema opercional.
 
