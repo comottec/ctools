@@ -21,11 +21,13 @@ Para facilitar o uso você pode opcionalmente criar a váriavel de ambiente Prot
 ### No Windows:
     SET ProtheusBin=C:\Totvs12\Protheus\Bin
 
-Com essa configuração definida, não será necessário passar os paramêtros ProtheusBin ou RpoFileName para o aplicativo.
+Com essa configuração definida, não será necessário passar o paramêtro ProtheusBin para o aplicativo.
 
 ## Instalação:
 
 Baixar o instalador no link abaixo:
+
+![list](https://raw.githubusercontent.com/comottec/ctools/master/distr/buildSetup/setup.exe
 
 Ou
 
