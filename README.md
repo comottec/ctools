@@ -27,7 +27,7 @@ Com essa configuração definida, não será necessário passar o paramêtro Pro
 
 Baixar o instalador no link abaixo:
 
-![list](https://raw.githubusercontent.com/comottec/ctools/master/distr/buildSetup/setup.exe
+https://raw.githubusercontent.com/comottec/ctools/master/distr/buildSetup/setup.exe
 
 Ou
 
