@@ -14,56 +14,62 @@ Comottec Tools é um aplicativo por linha de comando, que contém um conjuto de 
 * Criar configuração de broker
 * Criar novos slots de Appsever para ativar no master;
 
-## Requisitos:
-
-* Sistema operacional Windows.
-* .Net Framework 4.00 ou superior.
-* Powershell 5.0 ou superior.
-
 ## Configurações:
 
-Para facilitar o uso você pode opcionalmente criar o arquivo Config.json na pasta C:\Comottec\CTools conforme abaixo:
-```json
-{
-  "ProtheusBin": "C:\\totvs12\\protheus\\bin",
-  "RpoFileName": "tttp120.rpo"
-}
-```
+Para facilitar o uso você pode opcionalmente criar a váriavel de ambiente ProtheusBin conforme abaixo:
+
+### No Windows:
+    SET ProtheusBin=C:\Totvs12\Protheus\Bin
+
 Com essa configuração definida, não será necessário passar os paramêtros ProtheusBin ou RpoFileName para o aplicativo.
 
 ## Instalação:
 
-Baixar o repostório do GitHub e extrair para a pasta C:\Comottec\CTools
+Baixar o instalador no link abaixo:
+
+Ou
+
+Baixar o repostório do GitHub: git clone https://github.com/comottec/ctools.git ctools
 
 Recomenda-se colocar essa pasta no path do sistema opercional.
 
 ## Sintaxe:
 
 ### List
-    CTools list [[-ProtheusBin] <String>] [-printEnv] [[-Environment] <String>]
+    CTools list [[--ProtheusBin] <String>] [--printEnv] [[--Environment] <String>] [[--Port] <Number>]
+    ou
+    CTools list [[-b] <String>] [--pe] [[-e] <String>] [[-p] <Number>]
     
     Parametros:
     ProtheusBin = Caminho para a pasta <Protheus\Bin>
     printEnv = Deseja listar os environments
     Environment = Filtrar os Appservers em que encontrou o environment pesquisado
+    Port = Filtrar os Appservers em que encontrou a porta pesquisada
 
 ### Update
-    CTools update [[-ProtheusBin] <String>] [-Environment] <String> [[-SourcePath] <String>] [[-RpoFileName] <String>] 
+    CTools update [[--ProtheusBin] <String>] --Environment <String> --SourcePath <String> [[--Port] <Number>] 
+    ou
+    CTools update [[-b] <String>] -e <String> -s <String> [[-p] <Number>] 
 
     Parametros:
     ProtheusBin = Caminho para a pasta <Protheus\Bin>
     Environment = Environment a ser atualizado
     SourcePath = Nova pasta a ser atualizada no SourcePath os Ini's (essa pasta deve existir)
-    RpoFileName = Nome do arquivo de RPO
+    Port = Caso deseje atualizar apenas um Appserver em especifico
 
 ### Start
-    CTools start
+    CTools start [[--Port] <Number>]
+    ou
+    CTools start [[-p] <Number>]
+
+    Port = Caso deseje iniciar o serviço de apenas um Appserver em especifico
 
 ### Stop
-    CTools stop [-Force]
+    CTools stop [[--Port] <Number>]
+    ou
+    CTools stop [[-p] <Number>]
 
-    Parametros:
-    Force = Forçar a parada do serviço
+    Port = Caso deseje parar o serviço de apenas um Appserver em especifico
 
 ## Exemplos de uso:
 
@@ -72,15 +78,15 @@ Recomenda-se colocar essa pasta no path do sistema opercional.
 ![list](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list.png)
 
 #### Listagem de Environments:
-    CTools.exe list -printEnv
+    CTools.exe list --printEnv
 ![list-printenv](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list-printenv.png)
 
 #### Listagem de um Environment:
-    CTools.exe list -Environment top
+    CTools.exe list --Environment top
 ![list-environment](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-list-environment.png)
 
 #### Update de SourcePath nos Appservers:
-    CTools.exe update -Environment top -SourcePath=C:\tovs12\protheus\apo\top\v002
+    CTools.exe update --Environment top --SourcePath=C:\tovs12\protheus\apo\top\v002
 ![list-update](https://raw.githubusercontent.com/comottec/ctools/master/imagens/ctools-update.png)
 
 #### Para rodar os comandos Start ou Stop será necessário privilégios administrativos:

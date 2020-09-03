@@ -1,0 +1,18 @@
+{
+  "name": "ctools",
+  "version": "1.0.0",
+  "description": "Comottec Tools for ERP",
+  "main": "./src/CTools.js",
+  "bin": "./src/CTools.js",
+  "dependencies": {
+    "iconv-lite": "^0.6.2",
+    "ini": "^1.3.5",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristiano Ferreira",
+  "license": "MIT"
+}
