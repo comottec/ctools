@@ -3,7 +3,7 @@
 
 #define MyAppName "CTools"
 #define MyAppVersion "1.0.0"
-#define MyAppPublisher "Comottec Tecnologia da Informação EIRELI"
+#define MyAppPublisher "Comottec Tecnologia da Informaï¿½ï¿½o EIRELI"
 #define MyAppURL "https://www.comottec.com.br/ctools"
 #define MyAppExeName "CTools.exe"
 
@@ -50,6 +50,7 @@ Source: "Z:\git\ctools\batches\CTools-list.bat"; DestDir: "{app}"; Flags: ignore
 Source: "Z:\git\ctools\batches\CTools-start.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Z:\git\ctools\batches\CTools-stop.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Z:\git\ctools\batches\CTools-update.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Z:\git\ctools\batches\CTools-config.bat"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
